@@ -39,10 +39,7 @@ class Task implements \ArrayAccess, \Serializable
                 throw new \Exception('队列连接丢失');
             }
             $msg = $this->connect->pop();
-            $task = unserialize($msg);//TODO;优化
-            if($task == false){
-                return;
-            }
+            $task = unserialize($msg);
             $controller = $task['controller'];
             $action = $task['action'];
             $extras = $task['extras'];
