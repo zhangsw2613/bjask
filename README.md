@@ -13,7 +13,7 @@
 ### 3.任务处理
 	app目录下
 		Configs		 	系统/项目配置文件
-		Controllers 	控制器层
+		Controllers 		控制器层
 		Libs 			第三方扩展类库
 		Models			数据模型层，具体数据使用方法可阅读https://www.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/getting-started.html
 	
