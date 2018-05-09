@@ -21,8 +21,8 @@ return [
     'messageType' => 'ding',//报警消息类型:ding,sms
     //任务相关配置
     'topic' => [
-        'mytask1' => ['minProcess' => 1, 'maxProcess' => 3, 'entity' => 'LaravelEntity'],//每个任务可开启的进程数区间，及使用的数据实体类型
-        'mytask2' => ['minProcess' => 1, 'maxProcess' => 3, 'entity' => 'LaravelEntity']
+        'mytask1' => ['minProcess' => 1, 'maxProcess' => 3],//每个任务可开启的进程数区间
+        'mytask2' => ['minProcess' => 1, 'maxProcess' => 3]
     ],
     //日志相关配置
     'log' => [
@@ -43,7 +43,7 @@ return [
     //消息相关配置
     'message' => [
         'ding' => [
-            'url' => 'https://oapi.dingtalk.com/robot/send?access_token=5cc0a4e5b95b6a8290208c3d83a243d954cf78bd86229f133e45cf81ecd42a27',
+            'url' => 'https://oapi.dingtalk.com/robot/send?access_token=',
         ],
         'sms' => []
     ],
