@@ -108,8 +108,15 @@ class Task implements \ArrayAccess, \Serializable
      */
     public function openConnect(string $topic_name)
     {
-        $this->topicName = $topic_name;
-        $this->connect = $this->queue->createConnection($this->topicName);
+        try {
+            $this->topicName = $topic_name;
+            $this->connect = $this->queue->createConnection($this->topicName);
+        } catch (\Exception $e) {
+            $this->logger->log($e->getMessage(), $this->logger::LEVEL_ERROR);
+        } catch (\Throwable $e) {
+            $this->logger->log($e->getMessage(), $this->logger::LEVEL_ERROR);
+        }
+
     }
 
     /**

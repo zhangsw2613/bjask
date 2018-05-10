@@ -33,12 +33,16 @@ return [
     ],
     //队列相关配置
     'queue' => [
-        'driver' => 'rabbitmq',
+        /*'driver' => 'rabbitmq',
         'host' => '127.0.0.1',
         'port' => '5672',
         'user' => 'guest',
         'pass' => 'guest',
-        'vhost' => '/'
+        'vhost' => '/'*/
+        'driver' => 'redis',
+        'host' => '127.0.0.1',
+        'port' => '6381',
+        'password'=> ''
     ],
     //消息相关配置
     'message' => [
