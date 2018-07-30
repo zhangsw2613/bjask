@@ -48,7 +48,7 @@ class RedisQueue implements QueueHandlerInterface
      */
     public function push(string $messgae)
     {
-        return $this->redis->lPush($this->listKey,$messgae);
+        return $this->redis->rPush($this->listKey,$messgae);
     }
 
     /**
