@@ -16,12 +16,7 @@
 		Controllers 		控制器层
 		Libs 			第三方扩展类库
 		Models			数据模型层，具体数据使用方法可阅读https://www.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/getting-started.html
-	
-	
-### 4.未完
-	redis队列
-	sms发送消息
 
 
-### 5.后续
+### 4.后续
 	...
